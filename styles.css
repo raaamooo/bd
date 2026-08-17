@@ -933,7 +933,7 @@ img {
     bottom: -40px;
     width: 40px;
     height: 50px;
-    background: ['#ff9a9e', '#fad0c4', '#fbc2eb', '#ffeaa7', '#dda0dd'][Math.floor(Math.random() * 5)];
+    background: #ff9a9e;
     border-radius: 50% 50% 40% 40% / 60% 60% 40% 40%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transform: scale(0);
@@ -948,7 +948,7 @@ img {
     transform: translateX(-50%);
     width: 4px;
     height: 8px;
-    background: ['#ff9a9e', '#fad0c4', '#fbc2eb', '#ffeaa7', '#dda0dd'][Math.floor(Math.random() * 5)];
+    background: #ff9a9e;
 }
 
 .balloon.popping {
