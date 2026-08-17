@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Oddy! 🎉 - A Personalized Celebration</title>
+    <meta name="description" content="A beautiful animated birthday webpage for Oddy featuring personal photos, interactive elements, heartfelt messages, and surprise features.">
+    <meta name="keywords" content="birthday, celebration, Oddy, animated, photos, gift, interactive, surprises">
+    <meta property="og:title" content="Happy Birthday Oddy! 🎉">
+    <meta property="og:description" content="A personalized birthday celebration for Oddy with photos, animations, love, and interactive surprises.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="1.jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎂</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Happy Birthday Oddy! 🎂</h1>
+            <p>Celebrating the amazing person you are!</p>
+            <!-- Audio Controls -->
+            <div class="audio-controls">
+                <button id="audio-toggle" aria-label="Toggle background music" title="Toggle background music">
+                    🔊
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <div class="gallery">
+                <div class="photo-frame" data-photo-id="1">
+                    <div class="photo-placeholder">
+                        <img src="1.jpeg" alt="Our Adventure Begins" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="caption">Our Adventure Begins</div>
+                </div>
+
+                <div class="photo-frame" data-photo-id="2">
+                    <div class="photo-placeholder">
+                        <img src="2.jpeg" alt="Memories Made Together" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="caption">Memories Made Together</div>
+                </div>
+
+                <div class="photo-frame" data-photo-id="3">
+                    <div class="photo-placeholder">
+                        <img src="3.jpeg" alt="Forever & Always" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="caption">Forever & Always</div>
+                </div>
+
+                <div class="photo-frame" data-photo-id="4">
+                    <div class="photo-placeholder">
+                        <img src="4.jpeg" alt="Best Moments" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="caption">Best Moments</div>
+                </div>
+
+                <div class="photo-frame" data-photo-id="5">
+                    <div class="photo-placeholder">
+                        <img src="5.jpeg" alt="You Mean Everything" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="caption">You Mean Everything</div>
+                </div>
+
+                <div class="photo-frame" data-photo-id="6">
+                    <div class="photo-placeholder">
+                        <img src="6.jpeg" alt="Happy Birthday Love!" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="caption">Happy Birthday Love!</div>
+                </div>
+            </div>
+
+            <!-- Wish Well Button -->
+            <button id="wish-well-btn" class="wish-well-btn" aria-label="Leave a wish for Oddy">
+                💫 Leave a Wish
+            </button>
+        </main>
+
+        <footer>
+            <p>With all my love ❤️</p>
+            <div class="birthday-cake">🎂</div>
+        </footer>
+    </div>
+
+    <!-- Wish Well Modal -->
+    <div id="wish-modal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Leave a Wish for Oddy 💫</h2>
+                <button id="close-wish-modal" aria-label="Close wish modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>What would you like to say to Oddy on their special day?</p>
+                <textarea id="wish-input" placeholder="Type your wish here..." maxlength="200"></textarea>
+                <div class="char-count">0/200 characters</div>
+                <button id="submit-wish" class="btn-primary">Share Wish</button>
+            </div>
+            <div class="modal-footer">
+                <h3>Wishes from Friends & Family:</h3>
+                <div id="wishes-list" class="wishes-list">
+                    <!-- Wishes will be populated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mini-Game Container (hidden by default) -->
+    <div id="mini-game-container" class="mini-game-container" aria-hidden="true">
+        <div class="mini-game-header">
+            <h2>🎈 Balloon Pop Challenge! 🎈</h2>
+            <p>Click or tap the balloons to pop them before they float away!</p>
+            <div class="game-stats">
+                <span>Score: <span id="game-score">0</span></span>
+                <span>Time: <span id="game-time">30</span>s</span>
+            </div>
+            <button id="close-game" aria-label="Close game">&times;</button>
+        </div>
+        <div id="game-area" class="game-area">
+            <!-- Balloons will be spawned here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
