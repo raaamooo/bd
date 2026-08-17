@@ -325,7 +325,7 @@ function showTooltip(target, text) {
 
     // Fade in
     requestAnimationFrame(() => {
-        tooltipElement.style.opacity = '1');
+        tooltipElement.style.opacity = '1';
     });
 }
 
@@ -909,9 +909,16 @@ function spawnBalloons() {
     const left = Math.random() * 80 + 10; // 10-90vw
     balloon.style.left = `${left}vw`;
 
+    // Random color
+    balloon.style.background = ['#ff9a9e', '#fad0c4', '#fbc2eb', '#ffeaa7', '#dda0dd'][Math.floor(Math.random() * 5)];
+
+    // Random color
+    balloon.style.background = ['#ff9a9e', '#fad0c4', '#fbc2eb', '#ffeaa7', '#dda0dd'][Math.floor(Math.random() * 5)];
+
     // Add knot
     const knot = document.createElement('div');
     knot.className = 'knot';
+    knot.style.background = balloon.style.backgroundColor;
     balloon.appendChild(knot);
 
     // Add to game area

@@ -933,7 +933,6 @@ img {
     bottom: -40px;
     width: 40px;
     height: 50px;
-    background: #ff9a9e;
     border-radius: 50% 50% 40% 40% / 60% 60% 40% 40%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transform: scale(0);
