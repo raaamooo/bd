@@ -836,7 +836,7 @@ function createSingleBalloon() {
     // Float up
     let position = -40;
     const floatInterval = setInterval(() => {
-        position -= 1.5 + Math.random() * 2; // Variable speed
+        position += 1.5 + Math.random() * 2; // Variable speed
         balloon.style.bottom = `${position}px`;
 
         // Gentle drift
@@ -940,7 +940,7 @@ function spawnBalloons() {
             return;
         }
 
-        position -= floatSpeed;
+        position += floatSpeed;
         balloon.style.bottom = `${position}px`;
 
         // Gentle drift
